@@ -1,4 +1,7 @@
-﻿Console.Clear();
+﻿//В прошлый раз не подгрузила задание в репозиторий. Исправляюсь и, на всякий случай, добавлю и сюда)
+
+Console.Clear();
+
 Console.Write("Введите число: ");
 int a = Convert.ToInt32(Console.ReadLine());
 int b = 0;
