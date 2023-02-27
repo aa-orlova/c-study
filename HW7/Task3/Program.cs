@@ -23,14 +23,14 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-void SumColumns(int[,] matrix)
+void ResultColumns(int[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(1); i++)
     {
         int sum = 0;
         for (int j = 0; j < matrix.GetLength(0); j++)
             sum = sum + matrix[j, i];
-        Console.Write($"{sum} \t");
+        Console.Write($"{sum / matrix.GetLength(0)} \t");
     }
 }
 
@@ -41,4 +41,4 @@ int[,] matrix = new int[size[0], size[1]];
 
 FillMatrix(matrix);
 PrintMatrix(matrix);
-SumColumns(matrix);
+ResultColumns(matrix);
